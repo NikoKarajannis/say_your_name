@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 app.secret_key ="fjfjf"
 
+
 @app.route('/hello')
 def index():
     flash("What's your name?")
@@ -17,3 +18,5 @@ def greet():
     return render_template("index.html")
 
 
+if __name__ == '__main__':
+    app.run()
